@@ -1,4 +1,3 @@
-/* Основні стилі */
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -8,15 +7,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* Мінімальна висота для покриття всього екрану */
     overflow: hidden;
 }
 
 .app {
     width: 100%;
-    /* max-width: 100%; */
     height: 45vw;
-    /* Додаємо висоту */
     background-color: #121212;
     display: flex;
     flex-direction: column;
@@ -66,14 +62,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 20px; */
     text-align: center;
     overflow: auto;
     height: calc(100% - 50px);
-    /* Займає залишковий простір */
 }
 
-/* Елементи */
 .clock,
 .alarm,
 .stopwatch,
@@ -84,7 +77,6 @@ body {
 input[type="time"],
 input[type="number"] {
     width: 50%;
-    /* Відносна ширина */
     padding: 12px;
     margin: 10px 0;
     font-size: 20px;
@@ -115,7 +107,6 @@ button:active {
     background-color: #d35400;
 }
 
-/* Адаптивність */
 @media screen and (max-width: 768px) {
     .navbar button {
         font-size: 14px;
@@ -159,28 +150,26 @@ button:active {
 
     .app {
         width: 100%;
-        /* max-width: 100%; */
         height: 80vw;
-        /* Додаємо висоту */
         background-color: #121212;
         display: flex;
         flex-direction: column;
     }
 
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            background-color: #1c1c1c;
-            padding: 10px 0;
-            gap: 15px;
-            border-bottom: 1px solid #333;
-            max-width: 70%;
-            margin: 0 auto;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #1c1c1c;
+        padding: 10px 0;
+        gap: 15px;
+        border-bottom: 1px solid #333;
+        max-width: 70%;
+        margin: 0 auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
